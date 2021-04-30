@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  
+  <!---font awesome-->
+  <script src="https://kit.fontawesome.com/8f9afc284b.js" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+<script type="text/javascript" src="js/scripts.js"></script>       
+
+</head>
+
+<body>
+
+    
+<div class="sidenav">
+  <a id="option1" class="sidenav-Options" href="#about">About</a>
+  <a id="option2" class="sidenav-Options" href="#services">Services</a>
+  <a id="option3" class="sidenav-Options" href="#clients">Clients</a>
+  <a id="option4" class="sidenav-Options" href="#contact">Contact</a>
+</div>
+
+
+
+
+  <section id="title">
+
+   <div class="container-fluid">
+   
+    <!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Tindog</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Download</a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="login.html" onclick="logout()">Logout</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="test.html">test account.</a>
+        </li>
+    </ul>
+ </div>
+</nav>
+
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <button id="botTest"  class="botTest" type="button" >Embedded Bot</button>
+
+<h4 id="userName" >  <script> document.getElementById("userName").innerHTML = "Welcome : " + localStorage.getItem('Uname');</script>
+ </h4>
+
+<a href="images/Mount-Everest.jpg" download>         <button type="button">Download</button> </a>
+
+    <!-- Title -->
+
+    <select name="Pricing" id="Pricing" value ="select from below">
+            <option value="">--Please choose an option--</option>
+
+          <option value="s2" label="VIP" >VIP</option>
+
+  <option value="s2" label="Premium">Premium</option>
+  <option value="s3" label="Standard">Standard</option>
+</select>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  onclick="aptrinsic('track', 'Dropdown', {"option" : "selected" })"  
+>
+    Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button id="d3" class="dropdown-item" type="button" data-gs=’report__actions-copy’>Something else here</button>
+    <button id="d2" class="dropdown-item" type="button">Another action</button>
+        <button id="d1" class="dropdown-item" type="button">Action</button>
+
+
+  </div>
+</div>
+<br><br>
+<div class="dropdown2">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button  class="dropdown-item" type="button">Action</button>
+     <button  class="dropdown-item" type="button">Something else here</button>
+    <button  class="dropdown-item" type="button">Another action</button>
+   
+  </div>
+</div>
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
+
+<button type="button" id="bookAcall" class="0-legend" onclick="aptrinsic('track','Book_a_call',{"clicked":true});"> Book a call</button>
+<button type="button" class="multiple_buttons" data-testid = "bot_button"> custom Dom</button>
+<button type="button" class="multiple_buttons"> button3</button>
+<button type="button" class="multiple_buttons" data-qa="report__actions-copy" data-gs="report__actions-copy"> Data-gs</button>
+
+
+<h2>Toggle Switch</h2>
+
+<label class="switch">
+  <input type="checkbox" class="category" onclick="checkboxAction(this)">
+  <span class="slider"></span>
+</label>
+
+<label class="switch">
+  <input type="checkbox" checked class="category" onclick="checkboxAction(this)">
+  <span class="slider"></span>
+</label><br><br>
+
+<label class="switch">
+  <input type="checkbox" class="category" onclick="checkboxAction(this)">
+  <span class="slider round"></span>
+</label>
+
+<label class="switch">
+  <input type="checkbox" checked class="category" onclick="checkboxAction(this)">
+  <span class="slider round"></span>
+</label>
+
+<div class="row">
+    <div class="col-lg-6">
+      <h1 >Meet new and interesting dogs nearby.</h1>
+<button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+<button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>  Download</button>    </div>
+    <div class="col-lg-6">
+    </div>
+</div>
+ 
+ </div>
+  </section>
+
+        <a href="#press" >hashing</a>
+
+  <!-- Features -->
+
+  <section id="features">
+  
+  <div class="row">
+  
+  <div class="col-lg-4">
+<i class="fas fa-check-circle fa-4x"></i>
+    <h3>Easy to use.</h3>
+    <p>So easy to use, even your dog could do it.</p>
+</div>
+     <div class="col-lg-4">
+<i class="fas fa-bullseye fa-4x"></i>
+    <h3>Elite Clientele</h3>
+    <p>We have all the dogs, the greatest dogs.</p>
+</div>
+     <div class="col-lg-4">
+<i class="fas fa-heart fa-4x"></i>
+    <h3>Guaranteed to work.</h3>
+    <p>Find the love of your dog's life or your money back.</p>
+    </div>
+</div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    
+
+   
+
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+    <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+    <em>Pebbles, New York</em>
+    </div>
+    <div class="carousel-item">
+      <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+    <em>Beverly, Illinois</em> 
+    </div>
+   
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  </section>
+
+
+  <!-- Press -->
+  <section id="press">
+    <img class="press-image" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-image" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-image" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-image" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+        <button class="bt" id="btn-columns-campaigns-btnEl" data-success="test"> <span class="st">ButtonTest</span></button>
+
+<div>
+      <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div>
+   
+   
+    <!-- Call to Action -->
+
+ 
+
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="modalopen()">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" style="top:10px !important;bottom:10px !important">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+      <div class="container">
+  <div class="row">
+    <div class="col modalLeft">
+ <label><input type="checkbox" /> option1</label>    
+  <label><input type="checkbox" /> option2</label>
+   <label><input type="checkbox" /> option3</label>
+    <label><input type="checkbox" /> option4</label>
+    <br><br>    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+ </div>
+    <div class="col modalRight">
+ <label><input type="checkbox" /> English</label>    
+  <label><input type="checkbox" /> French</label>
+  </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="showengagement()">Create</button>
+      </div>
+    </div>
+
+  </div>
+
+  
+</div>
+
+
