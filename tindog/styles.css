@@ -1,0 +1,199 @@
+/*login page*/
+
+.login{
+    margin: 200px 400px 20px;
+background-color: #ff4c68;
+color: white;
+   border: solid black;
+}
+.form-signin{
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.login .navbar-brand{  
+font-size: 4em;
+
+color: white;
+}
+
+.login-body{
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+/*------------------------------home page-----*/
+
+body{
+font-family: "montserrat";
+}
+
+#title{
+background-color: #ff4c68;
+color: white;
+
+}
+.title-image{
+width: 60%;
+transform: rotate(25deg)
+}
+
+
+.navbar{
+padding: 0 0 4.5rem;
+}
+
+.navbar-brand{  
+font-family: "Ubuntu";
+font-size: 2.5 rem;
+font-weight: bold;
+}
+
+.nav-item{
+padding: 0 18px;
+}
+.nav-link{
+font-size: 1.2 rem;
+font-family: "montserrat-light";
+
+}
+
+.download-button{
+margin: 5% 3% 5% 0;
+}
+
+h1{
+
+font-family: "Montserrat";
+font-size: 3.5rem;
+font-weight: bold;
+line-height: 1.5;
+}
+
+h2,h3{
+font-family: "Montserrat-bold";
+line-height: 1.5;
+font-size: 3rem;
+}
+
+.container-fluid{
+padding: 3% 15%;
+}
+
+
+<!----Middle--->
+#features h3{
+font-family: montserrat-bold;
+font-size: 1.5rem;
+}
+#features p{
+color: #8f8f8f;
+
+}
+#features .fas{
+color: #ef8172;
+}
+
+#features .fas:hover{
+color: #ff4c68;
+}
+#features .col-lg-4{
+text-align: center;
+padding: 5%;
+}
+#features{
+padding: 7% 15%;
+}
+
+
+/*////////////////////////////////testimonials//////////////////////////*/
+
+
+
+#testimonials{
+
+background-color: #ef8172;
+color: #fff;
+text-align: center;
+}
+.carousel-item{
+    padding: 7% 15%;
+
+}
+
+.testimonial-image{
+margin: 20px;
+width: 10%;
+border-radius: 100%;
+}
+.press-image{
+margin: 20px 20px 50px;
+width: 15%;
+
+}
+#press{
+    background-color: #ef8172;
+text-align: center;
+padding: 3%;
+}
+
+
+/*contact form------------*/
+
+
+.contact-form{
+    margin: 100px 200px 100px;
+     height: 500px;
+  border-radius: 5px;
+  background-color:#fff;
+  padding: 20px;
+}
+
+.navbar-brand{  
+font-size: 3em;
+
+}
+ #userName{
+     font-size: 50px;
+ }
+
+.modal {
+overflow-y: auto;
+}
+
+
+
+.modalLeft, .modalRight{
+padding: 10px;
+    border: 2px solid black;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
